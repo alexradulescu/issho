@@ -1,4 +1,4 @@
-import { Option } from 'src/options'
+import { Option } from './options'
 
 export const Challenge = () => (
   <div>

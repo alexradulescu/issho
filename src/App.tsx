@@ -1,6 +1,6 @@
 import { Global } from '@emotion/react'
 
-import { Challenge } from 'src/challenge'
+import { Challenge } from 'src/challenges'
 import { cssReset } from 'src/shared'
 
 export const App = () => {
