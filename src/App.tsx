@@ -1,16 +1,20 @@
+import { lazy } from 'react'
 import { Global } from '@emotion/react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom'
 
 import { cssReset } from 'src/shared'
+
+const LandingPage = lazy(() => import('./landing/LandingPage'))
 
 export const App = () => {
   return (
     <>
       <Global styles={cssReset} />
+      <p>Hallo</p>
 
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<>Main page template</>}>
+          <Route path="/" element={<LandingPage />}>
             <Route index element={<>Home Index</>} />
             <Route path="challenge" element={<>Challenge Root</>}>
               <Route path=":challengeId" element={<>Challenge ID</>}>
