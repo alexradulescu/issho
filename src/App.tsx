@@ -1,17 +1,16 @@
 import { Global } from '@emotion/react'
 
-import { Challenge } from 'src/challenges'
 import { cssReset } from 'src/shared'
+
+import { Routes } from './Routes'
 
 export const App = () => {
   return (
-    <main>
+    <>
       <Global styles={cssReset} />
+      <p>App</p>
 
-      <h1>Welcome to Issho</h1>
-      <p>May consensus be with you</p>
-
-      <Challenge />
-    </main>
+      <Routes />
+    </>
   )
 }
