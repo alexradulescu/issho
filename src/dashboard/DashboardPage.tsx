@@ -1,12 +1,12 @@
 import { Outlet } from 'react-router-dom'
 
-const LandingPage = () => {
+const DashboardPage = () => {
   return (
     <div>
-      <h2>Landing page template</h2>
+      <h2>Dashboard page template</h2>
       <Outlet />
     </div>
   )
 }
 
-export default LandingPage
+export default DashboardPage
