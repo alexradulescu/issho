@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
 
-import { Navigation } from './components'
+import { Navigation, NavigationDock } from './components'
 
 const SharedPageTemplate = () => {
   return (
@@ -8,6 +8,7 @@ const SharedPageTemplate = () => {
       <h2>Shared page template</h2>
       <Navigation />
       <Outlet />
+      <NavigationDock />
     </div>
   )
 }

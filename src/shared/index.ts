@@ -1,3 +1,3 @@
 export * from './cssReset'
-export * from '../Routes'
+export * from './Routes'
 export * from './components'

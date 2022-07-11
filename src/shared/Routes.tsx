@@ -1,5 +1,10 @@
 import { lazy, Suspense } from 'react'
-import { BrowserRouter, Routes as ReactRoutes, Route } from 'react-router-dom'
+import {
+  BrowserRouter,
+  Routes as ReactRoutes,
+  Route,
+  Navigate
+} from 'react-router-dom'
 
 const SharedPageTemplate = lazy(() => import('src/shared/SharedPageTemplate'))
 const LandingPage = lazy(() => import('src/landing/LandingPage'))
@@ -33,13 +38,15 @@ export const Routes = () => {
                 <Route index element={<ChallengePage />} />
               </Route>
               <Route path="new" element={<ChallengeFormPage />} />
-              <Route index element={<ChallengeListPage />} />
+              <Route index element={<Navigate to="/challenges" />} />
             </Route>
+            <Route path="challenges" element={<ChallengeListPage />} />
 
             <Route path="result">
               <Route path=":resultId" element={<ResultPage />} />
-              <Route index element={<ResultListPage />} />
+              <Route index element={<Navigate to="/results" />} />
             </Route>
+            <Route path="results" element={<ResultListPage />} />
 
             <Route path="dashboard" element={<DashboardPage />} />
             <Route path="profile" element={<ProfilePage />} />

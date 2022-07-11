@@ -1,8 +1,6 @@
 import { Global } from '@emotion/react'
 
-import { cssReset } from 'src/shared'
-
-import { Routes } from './Routes'
+import { cssReset, Routes } from 'src/shared'
 
 export const App = () => {
   return (
