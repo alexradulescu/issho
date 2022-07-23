@@ -1,11 +1,13 @@
 import { Outlet } from 'react-router-dom'
 
-import { Navigation, NavigationDock } from './components'
+import { Logo, Navigation, NavigationDock } from './components'
 
 const SharedPageTemplate = () => {
   return (
     <div>
-      <h2>Shared page template</h2>
+      <header>
+        <Logo /> Issho
+      </header>
       <Navigation />
       <Outlet />
       <NavigationDock />
