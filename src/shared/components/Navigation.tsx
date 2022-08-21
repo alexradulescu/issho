@@ -1,11 +1,14 @@
-import { NavLink as RouterLink } from 'react-router-dom'
+// import { NavLink as RouterLink } from 'react-router-dom'
+import { styled } from '@linaria/atomic';
 
-import { Link } from '@chakra-ui/react'
+// import { Link } from '@chakra-ui/react'
 
 export const Navigation = () => {
   return (
-    <nav>
-      <Link as={RouterLink} to="/">
+    <Nav>
+      <TestA></TestA>
+      <TestB></TestB>
+      {/* <Link as={RouterLink} to="/">
         Home
       </Link>
       <Link as={RouterLink} to="/challenge">
@@ -34,7 +37,19 @@ export const Navigation = () => {
       </Link>
       <Link as={RouterLink} to="/register">
         Register
-      </Link>
-    </nav>
+      </Link> */}
+    </Nav>
   )
 }
+
+
+const Nav = styled.nav`
+  display:block;
+  margin:20px;
+`
+const TestA = styled.div`
+  display:block;
+`
+const TestB = styled.div`
+  margin:20px;
+`

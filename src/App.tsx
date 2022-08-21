@@ -1,13 +1,13 @@
-import { Global } from '@emotion/react'
+// import { Global } from '@linaria/core'
 
-import { cssReset } from 'src/shared'
+// import { cssReset } from 'src/shared'
 
 import { Routes } from './Routes'
 
 export const App = () => {
   return (
     <>
-      <Global styles={cssReset} />
+      {/* <Global styles={cssReset} /> */}
       <p>App</p>
 
       <Routes />
