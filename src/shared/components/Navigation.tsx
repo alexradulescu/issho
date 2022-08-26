@@ -1,55 +1,42 @@
-// import { NavLink as RouterLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { styled } from '@linaria/atomic';
 
 // import { Link } from '@chakra-ui/react'
 
 export const Navigation = () => {
   return (
-    <Nav>
-      <TestA></TestA>
-      <TestB></TestB>
-      {/* <Link as={RouterLink} to="/">
+    <nav>
+      <NavLink to="/">
         Home
-      </Link>
-      <Link as={RouterLink} to="/challenge">
+      </NavLink>
+      <NavLink to="/challenge">
         All Challenges
-      </Link>
-      <Link as={RouterLink} to="/challenge/new">
+      </NavLink>
+      <NavLink to="/challenge/new">
         New Challenge
-      </Link>
-      <Link as={RouterLink} to="/challenge/123">
+      </NavLink>
+      <NavLink to="/challenge/123">
         Individual Challenge
-      </Link>
-      <Link as={RouterLink} to="/challenge/123/edit">
+      </NavLink>
+      <NavLink to="/challenge/123/edit">
         Edit Individual Challenge
-      </Link>
-      <Link as={RouterLink} to="/result">
+      </NavLink>
+      <NavLink to="/result">
         Results
-      </Link>
-      <Link as={RouterLink} to="/result/456">
+      </NavLink>
+      <NavLink to="/result/456">
         Individual Result
-      </Link>
-      <Link as={RouterLink} to="/profile">
+      </NavLink>
+      <NavLink to="/profile">
         Profile
-      </Link>
-      <Link as={RouterLink} to="/login">
+      </NavLink>
+      <NavLink to="/login">
         Login
-      </Link>
-      <Link as={RouterLink} to="/register">
+      </NavLink>
+      <NavLink to="/register">
         Register
-      </Link> */}
-    </Nav>
+      </NavLink>
+    </nav>
   )
 }
 
-
-const Nav = styled.nav`
-  display:block;
-  margin:20px;
-`
-const TestA = styled.div`
-  display:block;
-`
-const TestB = styled.div`
-  margin:20px;
-`
