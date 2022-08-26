@@ -1,11 +1,18 @@
-import { css } from '@linaria/core'
+import { styled } from '@linaria/react';
 
 
-export const cssReset = css`
+export const GlobalStyles = () => {
+  return (
+    <StyleReset hidden id='style-reset' />
+  )
+}
+
+const StyleReset = styled.span`
+  :global() {
   /*
-  Shamelessly inspired (stolen) Josh's Custom CSS Reset ;-) 
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
+    Shamelessly inspired (stolen) Josh's Custom CSS Reset ;-) 
+    https://www.joshwcomeau.com/css/custom-css-reset/
+  */
 
   /* 
   - Allow percentage-based heights in the application 
@@ -81,13 +88,14 @@ export const cssReset = css`
   }
 
   /* 
-  - Create a root stacking context 
-  - Allow percentage-based heights in react application 
-*/
+    - Create a root stacking context 
+    - Allow percentage-based heights in react application 
+  */
   #root,
   #__next,
   #app {
     isolation: isolate;
     height: 100%;
   }
+}
 `

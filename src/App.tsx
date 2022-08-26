@@ -1,13 +1,11 @@
-// import { Global } from '@linaria/core'
-
-// import { cssReset } from 'src/shared'
+import { GlobalStyles } from 'src/shared'
 
 import { Routes } from './Routes'
 
 export const App = () => {
   return (
     <>
-      {/* <Global styles={cssReset} /> */}
+      <GlobalStyles/>
       <p>App</p>
 
       <Routes />
